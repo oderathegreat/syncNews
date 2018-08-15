@@ -5,7 +5,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Welcome, On Board</Text>
+        <Text style={styles.header}> Sync News </Text>
 
       </View>
     );
@@ -18,5 +18,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+
+  header:{
+fontSize:30,
+
+
+
   },
 });
