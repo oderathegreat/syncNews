@@ -2,16 +2,14 @@ export default {
 //fuction responsible for fetching data
 const apiRemote = 'https://bakesaleforgood.com'
 
-fetchDealsInit () {
+ async fetchDealsInit () {
   try {
-     let response = await fetch(
-       'https://facebook.github.io/react-native/movies.json'
-     );
+     let response = await fetch(apiRemote + '/api/Deals');
      let responseJson = await response.json();
-     return responseJson.movies;
+     return responseJson;
    } catch (error) {
      console.error(error);
-   },
+   }
 
 }
 
